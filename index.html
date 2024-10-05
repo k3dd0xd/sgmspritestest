@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="A palette edtior for the static sprites of Skullgirls Mobile.">
+    <title>Skullgirls Mobile Palette Editor</title>
+    <link rel="shortcut icon" type="image/png" href="icon/notblight.png">
+    <link rel="stylesheet" href="index.css"></link>
+    <script src="library/iro.min.js"></script>
+    <script src="library/jszip/jszip.min.js"></script>
+    <script src="library/FileSaver-js/FileSaver.min.js"></script>
+    <script src="polyfill.js"></script>
+    <script src="directory.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="wrapper flexbox">
+        <div class="section" id="left">
+            <div id="basic">
+                <div class="flexbox">
+                    <div id="version">6.5.0</div>
+                    <h1>
+                        <a target="_blank" href="https://github.com/Krazete/sgmpalette">Skullgirls Mobile Palette Editor</a>
+                    </h1>
+                    <div id="kofi">
+                        <a target="_blank" href="https://ko-fi.com/krazete">
+                            <img src="icon/kofi.png">
+                        </a>
+                    </div>
+                </div>
+                <div id="selection"></div>
+                <div class="flexbox">
+                    <input type="checkbox" class="option text" id="background" checked>
+                    <label for="background">Background</label>
+                    <input type="checkbox" class="option text" id="line" checked>
+                    <label for="line">Linework</label>
+                    <input type="checkbox" class="option text" id="detail" checked>
+                    <label for="detail">Detail</label>
+                </div>
+            </div>
+            <div class="button-container hidden" id="forum"><a href="https://forum.skullgirlsmobile.com/threads/17533" target="_blank">Submissions</a></div>
+            <div id="sheet"></div>
+            <div class="button-container">
+                <input type="checkbox" class="option text" id="tap-download">
+                <label for="tap-download">Download on Tap</label>
+                <div id="download">Download ZIP</div>
+            </div>
+            <div class="button-container">
+                <a href="https://krazete.github.io/sgmcard" target="_blank" id="outlink">
+                    Card Creator<img src="icon/ArrowGold.png">
+                </a>
+            </div>
+        </div>
+        <div class="section" id="right">
+            <div class="flexbox" id="blendmode">
+                <input type="radio" class="option text" name="blend" id="matte">
+                <label for="matte"><br>Matte</label>
+                <input type="radio" class="option text" name="blend" id="pastel">
+                <label for="pastel"><br>Pastel</label>
+                <input type="radio" class="option text" name="blend" id="shiny">
+                <label for="shiny"><br>Shiny</label>
+                <input type="radio" class="option text" name="blend" id="vivid" checked>
+                <label for="vivid"><br>Vivid</label>
+            </div>
+            <div class="flexbox" id="iro"></div>
+            <div id="palette"></div>
+            <div class="flexbox">
+                <input type="file" accept="image/*" id="load">
+                <label for="load">Load</label>
+                <input type="button" id="save">
+                <label for="save">Save</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>#af41{display:none;background-color:rgba(0,0,0,.5);position:absolute;left:0;top:0;width:100vw;height:100vh;z-index:1}#square41{font-family:Arial,Helvetica,sans-serif;font-weight:700;color:#000;background-image:radial-gradient(white 50%,transparent);position:relative;width:90%;height:min-content;max-height:100%;overflow:auto;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;padding:5px;box-shadow:0 0 200px #000,0 0 400px #000,0 0 600px #000}#close41,#square41 span{background-color:rgba(255,255,255,.3);text-shadow:0 0 5px #fff}#swapper41:before{content:'';background-image:url(https://i.imgur.com/yjJpwZS.png);background-size:cover;background-position:center 57%;position:absolute;left:0;top:0;width:100%;height:100%;z-index:-1;pointer-events:none;opacity:.5}#swapper41:hover:before{background-image:url(https://i.imgur.com/UKDCcz0.png)}#swapper41{box-shadow:inset 0 0 100px rgba(255,255,255,.6)}#swapper41 .x41,#swapper41:hover .y41{display:initial}#swapper41 .y41,#swapper41:hover .x41{display:none}#swapper41 .x41 .im41,#swapper41 .y41 .im41{background-size:contain;background-position:center;background-repeat:no-repeat;width:100%;height:47vw}@media all and (orientation:portrait){#swapper41 .x41 .im41{background-image:url(https://i.imgur.com/VHrx9dt.png)}#swapper41 .y41 .im41{background-image:url(https://i.imgur.com/564Q09s.png)}}@media all and (orientation:landscape){#swapper41 .x41 .im41{background-image:url(https://i.imgur.com/bEDoTFD.png);height:29vw}#swapper41 .y41 .im41{background-image:url(https://i.imgur.com/6Pahxgq.png);height:29vw}}#note41{font-size:x-small}#disc41{font-size:small}#close41{cursor:pointer}</style><div id="af41"><div id="square41"><h1><span>SITE CLOSED</span></h1><p><span>This website will remain closed until a Kizuna AI variant is added to SGM.</span></p><div id="swapper41"><div class="x41">Take your pick, devs.<div class="im41"></div></div><div class="y41">I'll accept Black AI too.<div class="im41"></div></div></div><p id="note41"></p><p id="disc41"><span>This website isn't affiliated with HVS or Autumn or Future Club or anyone with the power to make this happen, unfortunately.</span></p><p id="close41">[OK] / [Cancel]</p></div></div><script>var af41=document.getElementById("af41"),note41=document.getElementById("note41"),close41=document.getElementById("close41");if("Intl"in window){var t=new Date,e=Intl.DateTimeFormat("en-US",{timeZone:"Pacific/Kiritimati"}).format(),a=Intl.DateTimeFormat("en-US",{timeZone:"Pacific/Pago_Pago"}).format(),i=Intl.DateTimeFormat("en-US",{timeZone:"Etc/GMT+12"}).format();t.getMonth()+1==4&&1==t.getDate()?af41.style.display="block":e.startsWith("4/1/")?(note41.innerHTML="<span>Note: It's already April in Kiritimati.</span>",af41.style.display="block"):a.startsWith("4/1/")?(note41.innerHTML="<span>Note: It's still the 1st in Pago Pago.</span>",af41.style.display="block"):i.startsWith("4/1/")&&(note41.innerHTML="<span>Note: It's still the 1st at the International Date Line West.</span>",af41.style.display="block")}close41.addEventListener("click",t=>af41.remove());</script>

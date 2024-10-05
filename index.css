@@ -1,0 +1,281 @@
+html {
+    background: gray;
+    height: 100%;
+}
+
+body {
+    color: white;
+    font-family: 'Trebuchet MS', 'Helvetica', 'Arial', sans-serif;
+    text-transform: uppercase;
+    height: 100%;
+    margin: 0;
+}
+
+.flexbox {
+    display: flex;
+}
+.flexbox > * {
+    text-align: center;
+    flex: 1;
+}
+
+h1 {
+    margin: 12px 6px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+canvas {
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    cursor: crosshair;
+}
+
+input[type='radio'],
+input[type='checkbox'],
+input[type='file'],
+input[type='button'] {
+    display: none;
+}
+
+input:disabled {
+    visibility: hidden;
+}
+
+input + label {
+    cursor: pointer;
+}
+input.option + label {
+    padding: 6px;
+    opacity: 0.5;
+    display: inline-block;
+}
+input.option + label:hover {
+    opacity: 0.75;
+}
+input.option:checked + label {
+    font-weight: bold;
+    opacity: 1;
+}
+
+input.option.text + label:before {
+    content: '';
+    background-image: url(icon/CheckmarkBad.png);
+    background-size: 18px;
+    width: 18px;
+    height: 18px;
+    vertical-align: bottom;
+    display: inline-block;
+}
+input.option.text:checked + label:before {
+    background-image: url(icon/CheckmarkGood.png);
+}
+
+.hidden {
+    display: none;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.section {
+    position: relative;
+    overflow-y: scroll;
+}
+
+#left {
+    background:
+        linear-gradient(45deg, gray 25%, transparent 25% 75%, gray 75%) 0 0,
+        linear-gradient(45deg, gray 25%, darkgray 25% 75%, gray 75%) 10px 10px;
+    background-size: 20px 20px;
+}
+#left.solid {
+    background: none;
+}
+
+#basic {
+    background: linear-gradient(#1b2a41, #0f1824);
+    width: 100%;
+    border-bottom: 3px double #ccb55a;
+    margin-bottom: 12px;
+}
+
+#version {
+    font-size: 12px;
+    margin: 6px;
+    display: block;
+    flex: none;
+}
+
+#kofi {
+    flex: none;
+}
+
+#kofi img {
+    width: 24px;
+    margin: 6px;
+}
+
+#basic img {
+    vertical-align: middle;
+}
+
+.button-container {
+    padding: 8px;
+}
+.button-container > *,
+#tap-download:checked + label {
+    background: #ccb55a;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    padding: 6px;
+    border: 3px double #1b2a41;
+    cursor: pointer;
+}
+.button-container > *:hover {
+    background: #dec974;
+}
+
+#tap-download + label {
+    background: #1b2a41;
+    color: gray;
+    border: 3px double gray;
+    opacity: 1;
+}
+
+#outlink {
+    line-height: 32px;
+    display: inline;
+}
+
+#outlink img {
+    height: 32px;
+    vertical-align: bottom;
+}
+
+#right {
+    background: linear-gradient(#1b2a41, #0f1824);
+    border-left: 3px double #ccb55a;
+    flex: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#right > * {
+    flex: none;
+}
+
+#iro {
+    padding: 0 6px;
+}
+
+.disabled {
+    opacity: 0.25;
+    pointer-events: none;
+}
+
+#palette {
+    flex: 1;
+    overflow-y: scroll;
+}
+
+#palette input[type='radio'] + label {
+    display: block;
+    padding: 3px;
+    border-radius: 3px;
+    cursor: default;
+}
+#palette input[type='radio'] + label:hover {
+    box-shadow: inset 0 0 6px white;
+}
+#palette input[type='radio']:checked + label {
+    box-shadow: inset 0 0 3px 3px white;
+}
+#palette input[type='radio'].hidden + label {
+    display: none;
+}
+
+#palette input[type='radio'] + label:before {
+    content: attr(data-n);
+    width: 16px;
+    height: 16px;
+    color: white;
+    font-size: 8px;
+    line-height: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+#palette input[type='radio'] + label > * {
+    vertical-align: middle;
+    margin: 3px;
+}
+
+#palette input[type='color'] {
+    background: transparent;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: none;
+}
+
+#palette input[type='text'] {
+    background: none;
+    color: white;
+    font-family: 'Andale Mono', 'Lucida Console', 'Courier New', 'Courier', monospace;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 9em;
+    border-width: 0 0 1px 0;
+}
+
+#palette .chowder {
+    background: black;
+    background-size: 200%;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    outline: 1px solid white;
+    cursor: pointer;
+}
+#palette .chowder[data-value='1'] {
+    background-image: url(texture/Space.png);
+}
+#palette .chowder[data-value='2'] {
+    background-image: url(texture/fire.png);
+}
+#palette .chowder[data-value='3'] {
+    background-image: url(texture/water.png);
+}
+#palette .chowder[data-value='4'] {
+    background-image: url(texture/killarainbow.png);
+}
+#palette .chowder[data-value='5'] {
+    background-image: url(texture/umbrella_veins.png);
+}
+#palette .chowder[data-value='6'] {
+    background-image: url(texture/bunny_fishnet.png);
+}
+
+#palette input[type='checkbox'] + label {
+    background: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-block;
+}
+#palette input[type='checkbox']:checked + label {
+    background: radial-gradient(white, transparent 75%);
+}
