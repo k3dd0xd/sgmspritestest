@@ -575,7 +575,6 @@ var ids = {
         "Valentine_Wetwork"
     ],
     "custom": [
-        "custom/k3dd0/filia",
-        "custom/test/annie"
+        "custom/k3dd0/filia"
     ]
 };
