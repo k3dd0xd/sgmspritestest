@@ -1,6 +1,11 @@
 import os
 import json
 
+blacklist = [
+    'demiiial/marie', # color map too messy; index overlap with face and hair
+    'krazete/n_ko_avatar_filia' # cropped; replaced with full version by n_ko
+]
+
 def update_directory():
     '''Updates directory.js with contents of sprite folder.'''
     directory = {}
@@ -18,7 +23,9 @@ def update_directory():
     directory.setdefault('custom', [])
     for path in os.listdir('sprite/custom'):
         for subpath in os.listdir('sprite/custom/{}'.format(path)):
-            name = '{}/{}'.format(path, subpath.split('.')[0])
+            name = '{}/{}'.format(path, '.'.join(subpath.split('.')[0:-1]))
+            if name in blacklist:
+                continue
             directory['custom'].append('custom/{}'.format(name))
 
     with open('directory.js', 'w') as fp:
