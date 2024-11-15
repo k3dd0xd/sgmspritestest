@@ -77,6 +77,10 @@ input.option.text:checked + label:before {
     background-image: url(icon/CheckmarkGood.png);
 }
 
+input + label img {
+    display: block;
+}
+
 .hidden {
     display: none;
 }
@@ -126,6 +130,12 @@ input.option.text:checked + label:before {
 
 #basic img {
     vertical-align: middle;
+}
+
+#custom-selection label img {
+    background: #1b2a41;
+    box-shadow: 0 0 0 5px #1b2a41;
+    border-radius: 50%;
 }
 
 .button-container {
