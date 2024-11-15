@@ -737,6 +737,7 @@ var ids = {
         "custom/yixtu_qu/eliza_stun",
         "custom/yixtu_qu/filia",
         "custom/yixtu_qu/filia2",
+        "custom/yixtu_qu/filia3",
         "custom/yixtu_qu/filia_bluestreak",
         "custom/yixtu_qu/filia_hat",
         "custom/yixtu_qu/filia_jumping",
