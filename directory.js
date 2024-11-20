@@ -576,6 +576,8 @@ var ids = {
     ],
     "custom": [
         "custom/k3dd0/annie",
+        "custom/k3dd0/annie2",
+        "custom/k3dd0/annie3",
         "custom/k3dd0/bigband",
         "custom/k3dd0/braindrain",
         "custom/k3dd0/bomb",
@@ -583,8 +585,6 @@ var ids = {
         "custom/k3dd0/dahlia",
         "custom/k3dd0/double",
         "custom/k3dd0/filia",
-        "custom/k3dd0/filia2",
-        "custom/k3dd0/filia3",
         "custom/k3dd0/marie2",
         "custom/k3dd0/marie3",
         "custom/k3dd0/minette2",
