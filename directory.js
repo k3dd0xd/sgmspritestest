@@ -584,6 +584,7 @@ var ids = {
         "custom/k3dd0/bomb",
         "custom/k3dd0/cerebella",
         "custom/k3dd0/cerebella3",
+        "custom/k3dd0/eliza_heart",
         "custom/k3dd0/dahlia",
         "custom/k3dd0/double",
         "custom/k3dd0/filia",
