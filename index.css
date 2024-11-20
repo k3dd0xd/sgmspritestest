@@ -277,9 +277,12 @@ input + label img {
 }
 #palette .chowder[data-value='6'] {
     background-image: url(texture/bunny_fishnet.png);
-    }
+}
 #palette .chowder[data-value='7'] {
     background-image: url(texture/Rainbow.png);
+}
+#palette .chowder[data-value='7'] {
+    background-image: url(texture/Rainbow2.png);
 }
 
 #palette input[type='checkbox'] + label {
