@@ -457,6 +457,7 @@ function initTextures() {
     loadTexture(5, "texture/umbrella_veins.png");
     loadTexture(6, "texture/bunny_fishnet.png");
     loadTexture(7, "texture/Rainbow.png");
+    loadTexture(8, "texture/Rainbow2.png");
 }
 
 /* Right Section */
