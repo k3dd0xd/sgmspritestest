@@ -583,6 +583,7 @@ var ids = {
         "custom/k3dd0/annie4",
         "custom/k3dd0/annie_stars",
         "custom/k3dd0/bigband",
+        "custom/k3dd0/blackdahlia2",
         "custom/k3dd0/braindrain",
         "custom/k3dd0/bomb",
         "custom/k3dd0/cerebella",
