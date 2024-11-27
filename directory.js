@@ -576,6 +576,7 @@ var ids = {
     ],
     "custom": [
         "custom/badsprite/eliza",
+        "custom/badsprite/filia",
         "custom/badsprite/marie",
         "custom/k3dd0/annie",
         "custom/k3dd0/annie2",
