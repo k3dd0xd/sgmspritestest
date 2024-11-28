@@ -454,8 +454,10 @@ function initTextures() {
     loadTexture(2, "texture/fire.png");
     loadTexture(3, "texture/water.png");
     loadTexture(4, "texture/killarainbow.png");
-    loadTexture(5, "texture/umbrella_veins.png");
-    loadTexture(6, "texture/bunny_fishnet.png");
+    loadTexture(5, "texture/Rainbow.png");
+    loadTexture(6, "texture/blackspace.png");
+    loadTexture(7, "texture/umbrella_veins.png");
+    loadTexture(8, "texture/bunny_fishnet.png");
 }
 
 /* Right Section */
