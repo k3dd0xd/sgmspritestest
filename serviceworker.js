@@ -15,4 +15,4 @@ self.addEventListener("activate", function () {
             client.navigate(client.url);
         });
     });
-});
+});й
