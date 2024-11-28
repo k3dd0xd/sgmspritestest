@@ -585,6 +585,7 @@ var ids = {
         "custom/k3dd0/annie5",
         "custom/k3dd0/annie6",
         "custom/k3dd0/annie_stars",
+        "custom/k3dd0/beowulf_intothetrash",
         "custom/k3dd0/bigband",
         "custom/k3dd0/blackdahlia",
         "custom/k3dd0/blackdahlia2",
