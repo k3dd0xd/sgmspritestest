@@ -273,20 +273,24 @@ input + label img {
     background-image: url(texture/killarainbow.png);
 }
 #palette .chowder[data-value='5'] {
-    background-image: url(texture/umbrella_veins.png);
-}
-#palette .chowder[data-value='6'] {
-    background-image: url(texture/bunny_fishnet.png);
-}
-#palette .chowder[data-value='7'] {
     background-image: url(texture/Rainbow.png);
 }
-#palette .chowder[data-value='7'] {
+#palette .chowder[data-value='6'] {
     background-image: url(texture/Rainbow2.png);
-    }
+}
 #palette .chowder[data-value='7'] {
     background-image: url(texture/blackspace.png);
 }
+#palette .chowder[data-value='8'] {
+    background-image: url(texture/umbrella_veins.png);
+}
+#palette .chowder[data-value='9'] {
+    background-image: url(texture/bunny_fishnet.png);
+}
+#palette .chowder[data-value='10'] {
+    background-image: url(texture/dot.png);
+}
+
 
 #palette input[type='checkbox'] + label {
     background: white;
