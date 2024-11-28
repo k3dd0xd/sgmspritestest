@@ -614,6 +614,7 @@ var ids = {
         "custom/k3dd0/squigly3",
         "custom/k3dd0/squigly5",
         "custom/k3dd0/umbrella7",
-        "custom/ogo80/filia"
+        "custom/ogo80/filia",
+        "custom/zxc/cat"
     ]
 };
