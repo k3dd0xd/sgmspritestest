@@ -606,7 +606,7 @@ function initSwatch(n, r, g, b, a) {
     }
 
     function updateChowder() {
-        if (chowderlog[activechar] && chowderlog[activechar][n] && [1, 2, 3, 4].includes(chowderlog[activechar][n])) {
+        if (chowderlog[activechar] && chowderlog[activechar][n] && [1, 2, 3, 4, 5, 6].includes(chowderlog[activechar][n])) {
             color.disabled = true;
             text.disabled = true;
         }
