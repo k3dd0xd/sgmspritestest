@@ -283,6 +283,9 @@ input + label img {
 }
 #palette .chowder[data-value='7'] {
     background-image: url(texture/Rainbow2.png);
+    }
+#palette .chowder[data-value='7'] {
+    background-image: url(texture/blackspace.png);
 }
 
 #palette input[type='checkbox'] + label {
