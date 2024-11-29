@@ -578,6 +578,8 @@ var ids = {
         "custom/badsprite/eliza",
         "custom/badsprite/filia",
         "custom/badsprite/marie",
+        "custom/gushen/cerebella",
+        "custom/gushen/cerebella2",
         "custom/gushen/valentine",
         "custom/gushen/valentine2",
         "custom/gushen/valentine3",
