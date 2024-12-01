@@ -623,6 +623,7 @@ var ids = {
         "custom/k3dd0/squigly5",
         "custom/k3dd0/umbrella7",
         "custom/ogo80/filia",
+        "custom/zxc/parasoul2",
         "custom/zxc/cat"
     ]
 };
