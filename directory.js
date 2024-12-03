@@ -626,6 +626,7 @@ var ids = {
         "custom/ogo80/filia",
         "custom/ogo80/marie",
         "custom/wpplq/tatie",
+        "custom/wpplq/shelly",
         "custom/zxc/blackdahlia2",
         "custom/zxc/filia",
         "custom/zxc/parasoul2",
