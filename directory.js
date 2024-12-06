@@ -603,7 +603,7 @@ var ids = {
         "custom/gushen/annie3",
         "custom/gushen/annie5",
         "custom/gushen/cerebella",
-        "custom/k3dd0/eliza_heart",
+        "custom/gushen/eliza_heart",
         "custom/gushen/valentine",
         "custom/gushen/valentine2",
         "custom/gushen/valentine3",
