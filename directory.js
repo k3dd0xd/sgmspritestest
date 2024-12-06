@@ -601,7 +601,6 @@ var ids = {
         "custom/k3dd0/killer",
         "custom/k3dd0/dahlia",
         "custom/k3dd0/double",
-        "custom/k3dd0/filia",
         "custom/k3dd0/filia3",
         "custom/k3dd0/fukua2",
         "custom/k3dd0/fukua3",
