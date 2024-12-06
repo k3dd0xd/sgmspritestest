@@ -652,6 +652,7 @@ var ids = {
         "custom/wpplq/parasoul3",
         "custom/wpplq/tatie",
         "custom/wpplq/shelly",
-        "custom/zxc/filia"
+        "custom/zxc/filia",
+        "custom/zxc/fukua_particle"
     ]
 };
