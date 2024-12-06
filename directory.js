@@ -604,6 +604,7 @@ var ids = {
         "custom/gushen/annie5",
         "custom/gushen/cerebella",
         "custom/gushen/eliza_heart",
+        "custom/gushen/marielcartwright",
         "custom/gushen/valentine",
         "custom/gushen/valentine2",
         "custom/gushen/valentine3",
