@@ -65,7 +65,7 @@ var pickerflagged = true; /* true if picker is outdated */
 var activecustom; /* active custom character */
 var customids = { /* custom character categories and list of associated terms */
     "annie": ["sagan"],
-    "beowulf": ["hurting, marielcartwright"],
+    "beowulf": ["hurting"],
     "bigband": ["big_band"],
     "blackdahlia": ["dahlia", "bookie", "bonnie", "buttercup", "killer"],
     "braindrain": ["brain_drain"],
