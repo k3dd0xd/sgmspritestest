@@ -800,3 +800,24 @@ function holup(e) {
 
 window.addEventListener("DOMContentLoaded", init);
 window.addEventListener("beforeunload", holup);
+
+/* Ko-fi Easter Egg */
+
+var kofi = document.getElementById("kofi");
+var rainbowId;
+
+function rainbow() {
+    var h = (Date.now() / 60) % 360;
+    document.body.style = "--bg: hsl(" + h + ", 50%, 70%); --fg: hsl(" + h + ", 50%, 30%);";
+    rainbowId = requestAnimationFrame(rainbow);
+}
+
+function stopRainbow() {
+    document.body.style = "";
+    cancelAnimationFrame(rainbowId);
+}
+
+kofi.addEventListener("mouseover", rainbow);
+kofi.addEventListener("mouseout", stopRainbow);
+
+});
