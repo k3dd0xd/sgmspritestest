@@ -653,6 +653,7 @@ var ids = {
         "custom/wpplq/parasoul",
         "custom/wpplq/parasoul2",
         "custom/wpplq/parasoul3",
+        "custom/wpplq/parasoul4",
         "custom/wpplq/tatie",
         "custom/wpplq/shelly",
         "custom/zxc/filia",
