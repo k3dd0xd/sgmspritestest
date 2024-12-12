@@ -612,6 +612,7 @@ var ids = {
         "custom/k3dd0/annie2",
         "custom/k3dd0/blackdahlia",
         "custom/k3dd0/blackdahlia2",
+        "custom/k3dd0/bloodymarie2",
         "custom/k3dd0/black.dahlia_grab",
         "custom/k3dd0/braindrain",
         "custom/k3dd0/cerebella3",
