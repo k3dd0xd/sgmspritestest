@@ -642,6 +642,7 @@ var ids = {
         "custom/k3dd0/valentine5",
         "custom/k3dd0/valentine6",
         "custom/k3dd0/valentine7",
+        "custom/k3dd0/valentine_loadeffect",
         "custom/n_ko/annie_stars",
         "custom/n_ko/msfortune",
         "custom/n_ko/parasoul",
