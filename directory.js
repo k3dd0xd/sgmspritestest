@@ -1,6 +1,7 @@
 var ids = {
     "annie": [
         "Annie_AgelessWonder",
+        "Annie_AquaTeen",
         "Annie_BB1_MeteorStrike",
         "Annie_BB2_SaganBeam",
         "Annie_BB3_GravitySlingshot",
@@ -30,6 +31,8 @@ var ids = {
         "Annie_TripleThreat"
     ],
     "beowulf": [
+        "Beowulf_AA1_Launcher",
+        "Beowulf_AA3_IntoTheTrash",
         "Beowulf_BB1_T1_GiganticArm",
         "Beowulf_BB2_T2_Airwulf",
         "Beowulf_BB3_T3_ThreeWulfMoonsault",
@@ -79,6 +82,7 @@ var ids = {
         "BigBand_Portrait",
         "BigBand_PrivateDick",
         "BigBand_ResonantEvil",
+        "BigBand_RhythmRider",
         "BigBand_Robocopy",
         "BigBand_SM1_BrassKnuckles",
         "BigBand_SM2_GiantStep",
@@ -120,6 +124,7 @@ var ids = {
         "BlackDahlia_SM8_DeathPendulum",
         "BlackDahlia_SMX",
         "BlackDahlia_SoulCrusher",
+        "BlackDahlia_StellarHuntress",
         "BlackDahlia_TriggerHappy",
         "BlackDahlia_Unfazed",
         "BlackDahlia_UnholyHost"
@@ -206,7 +211,6 @@ var ids = {
         "Eliza_BB3_T2_NekhbetBreaker",
         "Eliza_Bloodbath",
         "Eliza_BloodyValentine",
-        "Eliza_Debonaire",
         "Eliza_Decrypted",
         "Eliza_DivaIntervention",
         "Eliza_InDenile",
@@ -252,6 +256,7 @@ var ids = {
         "Filia_ParasiteWeave",
         "Filia_Portrait",
         "Filia_RockStar",
+        "Filia_ShearForce",
         "Filia_SM1_FrenchTwist",
         "Filia_SM2_Hairball",
         "Filia_SM3_RingletSpike",
@@ -505,6 +510,7 @@ var ids = {
         "Squigly_DeadHeat",
         "Squigly_DeadOfWinter",
         "Squigly_DemonArtist",
+        "Squigly_FrozenRemains",
         "Squigly_GangGreen",
         "Squigly_GraveDanger",
         "Squigly_LoveCrafted",
