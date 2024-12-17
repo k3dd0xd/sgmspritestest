@@ -214,6 +214,7 @@ var ids = {
         "Eliza_LapisLuxury",
         "Eliza_MummyDearest",
         "Eliza_NobleMogul",
+        "Eliza_PassionIcon",
         "Eliza_Portrait",
         "Eliza_RedVelvet",
         "Eliza_Revamped",
