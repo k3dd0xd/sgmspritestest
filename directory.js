@@ -660,6 +660,7 @@ var ids = {
         "custom/n_ko/parasoul",
         "custom/ogo80/bigband",
         "custom/ogo80/filia",
+        "custom/ogo80/fukua",
         "custom/ogo80/marie",
         "custom/ogo80/peacock",
         "custom/popasobaky/bomb",
