@@ -655,6 +655,7 @@ var ids = {
         "custom/k3dd0/valentine5",
         "custom/k3dd0/valentine6",
         "custom/k3dd0/valentine7",
+        "custom/k3dd0/valentine8",
         "custom/k3dd0/valentine_loadeffect",
         "custom/k3dd0/wenda",
         "custom/n_ko/annie_stars",
