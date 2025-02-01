@@ -606,7 +606,7 @@ var ids = {
         "custom/badsprite/eliza",
         "custom/badsprite/filia",
         "custom/badsprite/marie",
-        "custom/demiiial/zone",
+        "custom/demiiial/zonetan",
         "custom/gushen/annie",
         "custom/gushen/annie3",
         "custom/gushen/annie4",
