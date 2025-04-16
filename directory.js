@@ -648,6 +648,7 @@ var ids = {
         "custom/k3dd0/parasoul",
         "custom/k3dd0/parasoul2",
         "custom/k3dd0/parasoul3",
+        "custom/k3dd0/peacock3",
         "custom/k3dd0/squigly3",
         "custom/k3dd0/squigly5",
         "custom/k3dd0/squigly6",
