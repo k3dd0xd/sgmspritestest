@@ -683,6 +683,7 @@ var ids = {
         "custom/wpplq/tatie",
         "custom/wpplq/shelly",
         "custom/zxc/annie",
+        "custom/zxc/annie2",
         "custom/zxc/filia",
         "custom/zxc/fukua_particle",
         "custom/zxc/marie2"
