@@ -616,6 +616,7 @@ var ids = {
         "custom/gushen/cerebella3",
         "custom/gushen/eliza",
         "custom/gushen/eliza_heart",
+        "custom/gushen/filia",
         "custom/gushen/fukua_banana",
         "custom/gushen/fukua",
         "custom/gushen/squigly_fireeffect",
@@ -693,3 +694,4 @@ var ids = {
         "custom/zxc/marie2"
     ]
 };
+
