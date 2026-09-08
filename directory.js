@@ -674,7 +674,6 @@ var ids = {
         "custom/gushen/fukua_banana",
         "custom/gushen/fukua",
         "custom/gushen/marie",
-        "custom/gushen/marie",
         "custom/gushen/marie_melanchream",
         "custom/gushen/squigly_parasoult",
         "custom/gushen/squigly_fireeffect",
