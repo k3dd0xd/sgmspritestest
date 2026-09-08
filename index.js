@@ -68,17 +68,17 @@ var customids = { /* custom character categories and list of associated terms */
     "beowulf": ["hurting"],
     "bigband": ["big_band"],
     "blackdahlia": ["dahlia", "bookie", "bonnie", "buttercup", "killer"],
-    "braindrain": ["brain_drain"],
+    "braindrain": ["brain_drain", "mech"],
     "cerebella": ["cassandra", "vice-versa", "vice_versa"],
     "double": ["agatha"],
-    "eliza": ["sekhmet"],
+    "eliza": ["sekhmet", "albus", "horace"],
     "filia": ["fukua", "samson", "shamone"],
     "marie": [],
     "minette": [],
     "msfortune": ["ms_fortune", "ms-fortune", "ms.fortune"],
     "painwheel": ["carol"],
     "parasoul": ["krieg", "egret"],
-    "peacock": ["patricia", "avery", "bomb", "george", "lenny"],
+    "peacock": ["patricia", "avery", "george", "lenny"],
     "robofortune": ["robo_fortune", "robo-fortune", "robo.fortune"],
     "squigly": ["sienna"],
     "umbrella": ["hungern"],
@@ -153,12 +153,12 @@ function updateFlags() {
                     var y = Math.ceil(i / 4 / canvas.width);
                     var texturemap = texture[chowderlog[activechar][cid]];
                     var k = 4 * ((x % texturemap.width) + (y % texturemap.height) * texturemap.width);
-                    if (chowderlog[activechar][cid] == 7) { /* umbrella_veins */
+                    if (chowderlog[activechar][cid] == 6) { /* umbrella_veins */
                         newdata.data[i] = blend[moed](colormap[j] + texturemap.data[k], detail, line);
                         newdata.data[i + 1] = blend[moed](colormap[j + 1] + texturemap.data[k], detail, line);
                         newdata.data[i + 2] = blend[moed](colormap[j + 2] + texturemap.data[k], detail, line);
                     }
-                    else if (chowderlog[activechar][cid] == 8) { /* bunny_fishnet */
+                    else if (chowderlog[activechar][cid] == 7) { /* bunny_fishnet */
                         newdata.data[i] = blend[moed](colormap[j] * texturemap.data[k] / 0xff, detail, line);
                         newdata.data[i + 1] = blend[moed](colormap[j + 1] * texturemap.data[k + 1] / 0xff, detail, line);
                         newdata.data[i + 2] = blend[moed](colormap[j + 2] * texturemap.data[k + 2] / 0xff, detail, line);
@@ -186,10 +186,10 @@ function updateFlags() {
                 }
             }
             context.putImageData(newdata, 0, 0);
-            canvas.classList.remove("hidden");
+            canvas.parentElement.classList.remove("hidden");
         }
         else {
-            canvas.classList.add("hidden");
+            canvas.parentElement.classList.add("hidden");
         }
 
         for (var i = 0; i < 256; i++) {
@@ -236,9 +236,17 @@ function initLeft() {
     function initSprite() {
         var character = this.dataset.character;
         var id = this.dataset.id;
+        var container = document.createElement("div");
         var canvas = document.createElement("canvas");
         var context = canvas.getContext("2d");
 
+        container.className = "canvas-container";
+        if (character == "custom") {
+            container.dataset.credit = id.match(/custom\/(.*)\//i)[1];
+        }
+        if (id.includes("_artist=")) {
+            container.dataset.artist = id.match(/_artist=(.*)/i)[1];
+        }
         canvas.className = character;
         canvas.id = id;
         canvas.width = this.width;
@@ -252,11 +260,12 @@ function initLeft() {
                 break;
             }
         }
+        container.appendChild(canvas);
         if (last) {
-            sheet.appendChild(canvas);
+            sheet.appendChild(container);
         }
         else {
-            sheet.insertBefore(canvas, child);
+            sheet.insertBefore(container, child);
         }
 
         datamap[id] = context.getImageData(0, 0, this.width, this.height);
@@ -458,10 +467,9 @@ function initTextures() {
     loadTexture(2, "texture/fire.png");
     loadTexture(3, "texture/water.png");
     loadTexture(4, "texture/killarainbow.png");
-    loadTexture(5, "texture/Rainbow.png");
-    loadTexture(6, "texture/blackspace.png");
-    loadTexture(7, "texture/umbrella_veins.png");
-    loadTexture(8, "texture/bunny_fishnet.png");
+    loadTexture(5, "texture/yixtu_qu.png");
+    loadTexture(6, "texture/umbrella_veins.png");
+    loadTexture(7, "texture/bunny_fishnet.png");
 }
 
 /* Right Section */
@@ -610,7 +618,7 @@ function initSwatch(n, r, g, b, a) {
     }
 
     function updateChowder() {
-        if (chowderlog[activechar] && chowderlog[activechar][n] && [1, 2, 3, 4, 5, 6].includes(chowderlog[activechar][n])) {
+        if (chowderlog[activechar] && chowderlog[activechar][n] && [1, 2, 3, 4, 5].includes(chowderlog[activechar][n])) {
             color.disabled = true;
             text.disabled = true;
         }
