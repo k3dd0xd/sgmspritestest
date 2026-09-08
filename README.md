@@ -6,7 +6,7 @@ A palette editor for the static sprites of Skullgirls Mobile.
 
 Static sprites consist of portraits, card art, and art for special moves and blockbusters.
 
-<img src="preview.png">
+![Skullgirls Mobile Palette Editor](sample/preview.png)
 
 A big thanks to Discord user Pupix#0001 for showing me where to find the raw sprites from which this entire project is based on.
 
@@ -22,8 +22,10 @@ You can also toggle visibility of the background layer, linework layer, and deta
 ### Spritesheet
 
 The spritesheet contains all in-game static sprites of the chosen character.
-There are also experimental custom sprites, created as outlined in the [Submissions](#Submissions) section.
 You can click within any sprite to select a color area to edit.
+
+There are also experimental custom sprites, created as outlined in the [Submissions](#Submissions) section.
+The creator of each custom sprite is credited in the corner of the sprite box and in the sprite filename.
 
 The hex color text input will automatically be selected for easy copying via keyboard shortcuts.
 (This feature does not activate when a touch is detected instead of a mouse click.)
@@ -68,13 +70,14 @@ Thanks to the following:
 * [jaames/iro.js](https://github.com/jaames/iro.js) for the color picker
 * [Stuk/jszip](https://github.com/Stuk/jszip) for making it easy to create zip files
 * [eligrey/FileSaver.js](https://github.com/eligrey/FileSaver.js) for making it easy to download those zip files
+* [leeoniya/RgbQuant.js](https://github.com/leeoniya/RgbQuant.js) for color quantization of erroneous colormap submissions
 
 The card art sprites can be uploaded to the [SGM Card Creator](https://github.com/Krazete/sgmcard), which should detect it based on its dimensions and automatically set the optimal position parameters.
 
 ## Submissions
 
-Custom palettized sprites can be created from inputs of a raw image layer, a linework layer, a base color layer, and a color map layer.
+Custom palettized sprites can be created from inputs of a raw image layer, a linework layer, a base color layer, and a colormap layer.
 
-<img src="create_sprite.png">
+![Palette File Pipeline](sample/create_sprite.png)
 
-See more information on [the submissions page](https://forum.skullgirlsmobile.com/threads/17533).
+See more information in [CONTRIBUTING.md](CONTRIBUTING.md).
